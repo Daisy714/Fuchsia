@@ -1,0 +1,106 @@
+body {
+    font-family: 'Arial', sans-serif; /* A more modern sans-serif font */
+    font-size: 16px;
+    flex-direction: column;
+    min-height: 100vh;
+    line-height: 1.6; /* Improved readability */
+    background-color: #F7F7F7; /* Light gray for a soft background */
+}
+
+header {
+    background-color: #FFFFFF; /* White */
+    color: #4A4A4A; /* Slightly softer dark gray for text */
+    padding: 20px;
+    text-align: center; /* Center text for a more polished look */
+}
+
+h1 {
+    font-family: 'Georgia', serif; /* Keep this for elegance */
+    font-size: 2.5rem; /* Increase header size for emphasis */
+}
+
+nav {
+    background-color: #FEE5D9; /* Soft pink */
+    color: #4A4A4A; /* Updated to match the new text color */
+    font-weight: bold;
+    font-size: 18px; /* Slightly smaller for balance */
+    padding: 10px;
+}
+
+nav a {
+    transition: color 0.3s ease; /* Smooth hover transition */
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #BAB2B5; /* Light gray */
+    font-size: .8em;
+    font-style: italic;
+    color: #FFFFFF; /* White */
+    margin-top: auto;
+    padding: 10px;
+}
+
+.logoImg {
+    width: 200px;
+}
+
+.logoDiv {
+    text-align: center;
+}
+
+a:link {
+    color: #2E8BC0; /* Soft blue for links */
+}
+a:visited {
+    color: #D19A00; /* Warm gold for visited links */
+}
+a:hover {
+    color: #C89C74; /* Light gold for hover effect */
+}
+a:active {
+    color: #D19A00; /* Consistent active color */
+}
+
+/* Table styles */
+table, td, th {
+    border: 1px solid #E0E0E0; /* Lighter border color for softness */
+    border-spacing: 0;
+}
+
+table {
+    width: 100%;
+}
+th {
+    font-family: 'Georgia', serif; /* Maintain elegance */
+    background-color: #FEF7EC; /* Light beige */
+}
+th, td {
+    padding: 10px 20px; /* Adjusted padding for a cleaner look */
+}
+
+/* Video page style rules */
+.pageTitle {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #C89C74; /* Light gold */
+    margin-bottom: 20px;
+    color: #4A4A4A; /* Softer dark gray */
+}
+
+#videoLayout {
+    border: 0;
+}
+
+.YouTubeVideo {
+    background-color: #F4ECE8; /* Light blush */
+    border: 0;
+    vertical-align: top;
+}
+
+.VideoWidget {
+    border: 0;
+    vertical-align: top;
+}
