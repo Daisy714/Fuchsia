@@ -1,70 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Home</title>
+    <title>Fuchsia Photography Blog</title>
+    <link rel="stylesheet" href="style_P.css"> <!-- Your custom stylesheet -->
 </head>
 <body>
-    <header class="bg-light py-4 shadow-sm">
+
+    <!-- Header -->
+    <header class="site-header">
         <div class="container">
-            <h1 class="text-center">Fuchsia</h1>
-            <div id="logo" class="text-center mb-3"></div>
-            <nav class="nav justify-content-center">
-                <a class="nav-link" href="index.html">Home</a>
-                <a class="nav-link" href="about.html">About</a>
-                <a class="nav-link" href="template.html">Template</a>
-                <a class="nav-link active" href="contact.html">Contact Us</a>
+            <div class="site-branding">
+                <!-- Logo -->
+                <a href="/" class="logo">
+                    <img src="pinklogo.png" alt="Fuchsia Logo" style="width: 150px;">
+                </a>
+                <!-- Site title -->
+            </div>
+            <nav class="main-navigation">
+                <ul class="menu">
+                    <li><a href="index_P.html">Home</a></li>
+                    <li><a href="about_P.html">About</a></li>
+                    <li><a href="template_P.html">Pricing</a></li>
+                    <li><a href="contact_P.html">Contact Us</a></li>
+                </ul>
             </nav>
         </div>
     </header>
 
-    <main class="container my-5">
-        <!-- Main Content Area -->
-        <div class="row mb-5">
-            <div class="col-md-8">
-                <h2 class="mb-3">Welcome to Fuchsia</h2>
-                <p>Welcome to my template repository! Here, you can explore a versatile template that you can adapt for any project, whether it's for personal use, a blog, or a business website. This template is designed to be user-friendly, allowing you to create a stunning website that meets your needs.</p>
-
-                <!-- Image Section directly under main content -->
-                <img src="pexels-designecologist-1779487.jpg" class="img-fluid rounded mb-4" alt="Decorative Image" style="max-width: 100%; height: auto;">
-            </div>
-            <div class="col-md-4">
-                <h2 class="mb-3">Template Features</h2>
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <strong>Fully Customizable Design:</strong> Tailor the look and feel of your website to match your brand or personal style.
-                    </li>
-                    <li class="list-group-item">
-                        <strong>Responsive Layout:</strong> Enjoy a seamless experience on both mobile and desktop devices, ensuring your site looks great everywhere.
-                    </li>
-                    <li class="list-group-item">
-                        <strong>Easy-to-Use Interface:</strong> Navigate the template with ease, making it accessible for users of all skill levels.
-                    </li>
-                </ul>
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url('blogbackground.jpg');">
+        <div class="container">
+            <div class="hero-content">
+                <h2 style="color: black;">Photography Tips, Inspiration, and More</h2>
+				<p style="color: black;">Explore tips from professional photographers to elevate your skills.</p>
+                <a href="/blog" class="cta-button">Read Our Blog</a>
             </div>
         </div>
+    </section>
 
-        <!-- Featured Post Section -->
-        <h2 class="text-center mb-4">Featured Post</h2>
-        <div class="card shadow-sm mb-5">
-            <img src="pexels-y6richowo-7666254.jpg" class="card-img-top img-fluid" alt="About Page Image" style="width: 100%; height: auto;">
-            <div class="card-body text-center">
-                <h5 class="card-title">Learn More About Templates</h5>
-                <p class="card-text">Discover the benefits of using templates for web design and how they can simplify your workflow.</p>
-                <a href="about.html" class="btn btn-custom btn-lg">Go to About Page</a>
-            </div>
+    <!-- Main Content Area -->
+    <div id="primary" class="content-area">
+        <main id="main" class="site-main">
+
+            <!-- Blog Section -->
+            <section class="blog-posts">
+                <h2 class="section-title">Latest Blog Posts</h2>
+                <div class="posts-grid">
+                    <!-- Post 1 -->
+                    <article class="post">
+                        <div class="post-thumbnail">
+                            <img src="post1.jpg" alt="How to Capture Perfect Portraits">
+                        </div>
+                        <div class="post-content">
+                            <h3 class="post-title"><a href="/post-1">How to Capture Perfect Portraits</a></h3>
+                            <p>Learn tips on lighting and composition for stunning portraits.</p>
+                            <a href="/post-1" class="read-more">Read More</a>
+                        </div>
+                    </article>
+
+                    <!-- Post 2 -->
+                    <article class="post">
+                        <div class="post-thumbnail">
+                            <img src="post2.jpg" alt="Understanding Camera Settings">
+                        </div>
+                        <div class="post-content">
+                            <h3 class="post-title"><a href="/post-2">Understanding Camera Settings</a></h3>
+                            <p>Master your camera settings for different shooting environments.</p>
+                            <a href="/post-2" class="read-more">Read More</a>
+                        </div>
+                    </article>
+
+                    <!-- Post 3 -->
+                    <article class="post">
+                        <div class="post-thumbnail">
+                            <img src="post3.jpg" alt="Editing Your Photos Like a Pro">
+                        </div>
+                        <div class="post-content">
+                            <h3 class="post-title"><a href="/post-3">Editing Your Photos Like a Pro</a></h3>
+                            <p>Step-by-step guide on editing photos in Lightroom and Photoshop.</p>
+                            <a href="/post-3" class="read-more">Read More</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <ul class="footer-menu">
+                <li><a href="/about">About</a></li>
+                <li><a href="/privacy">Privacy Policy</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+            <p>&copy; 2025 Fuchsia Blog</p>
         </div>
-    </main>
-
-    <footer class="bg-light text-center py-3">
-        <p>This is the footer information</p>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
