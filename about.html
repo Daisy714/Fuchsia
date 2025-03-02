@@ -1,61 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>About Templates</title>
+    <title>About - Fuchsia Blog</title>
+    <link rel="stylesheet" href="style_P.css">
 </head>
 <body>
-    <header class="bg-light py-4 shadow-sm">
+    <!-- Header Section with Menu -->
+    <header class="site-header">
         <div class="container">
-            <h1 class="text-center">About</h1>
-            <nav class="nav justify-content-center">
-                <a class="nav-link" href="index.html">Home</a>
-                <a class="nav-link" href="about.html">About</a>
-                <a class="nav-link" href="template.html">Template</a>
-                <a class="nav-link active" href="contact.html">Contact Us</a>
+            <div class="site-branding">
+			 <!-- Logo -->
+                <a href="/" class="logo">
+                    <img src="pinklogo.png" alt="Fuchsia Logo" style="width: 150px;">
+                </a>
+               
+            </div>
+            <nav class="main-navigation">
+                <ul class="menu">
+                    <li><a href="index_P.html">Home</a></li>
+                    <li><a href="about_P.html" class="active">About</a></li>
+                    <li><a href="template_P.html">Pricing</a></li>
+                    <li><a href="contact_P.html">Contact Us</a></li>
+                </ul>
             </nav>
         </div>
     </header>
 
-    <main class="container my-5">
-        <h2 class="text-center mb-4">Learn More About Templates</h2>
-
-        <div class="row">
-            <!-- Left Column: Video Section -->
-            <div class="col-md-6">
-                <div class="card shadow-sm mb-4">
-                    <div class="card-body">
-                        <iframe class="mb-3" width="100%" height="315" src="https://www.youtube.com/embed/nsHO5jqY2Es" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        <h3 class="card-title">10 Best Static Website Templates</h3>
-                        <p class="card-text">Basic templates are an excellent choice for anyone new to web design or needing a quick setup. They provide a structured, user-friendly layout that helps beginners understand HTML and CSS fundamentals, making it easier to learn how to customize elements like navigation bars, headers, and footers.</p>
-                        <p class="card-text">They also ensure compatibility across devices by incorporating responsive design elements for both mobile and desktop screens.</p>
+    <!-- Main Content Section (About Post) -->
+    <section class="about-section">
+        <div class="container">
+            <article class="about-post">
+                <header class="about-header">
+                    <!-- Circular Image Container -->
+                    <div class="about-image-container">
+                        <img src="circlepost.jpg" alt="Fuchsia" class="about-image">
                     </div>
-                </div>
-            </div>
+                    <h1 class="about-title">About Fuchsia Blog</h1>
+                    <p class="about-meta">Posted on March 1, 2025 by Daisy</p>
+                </header>
 
-            <!-- Right Column: Image and Text Section -->
-            <div class="col-md-6">
-                <div class="card shadow-sm mb-4">
-                    <img src="pexels-y6richowo-7666254.jpg" class="card-img-top img-fluid" alt="Featured Image">
-                    <div class="card-body">
-                        <h3 class="card-title">The Importance of Templates</h3>
-                        <p class="card-text">Templates are essential tools for web design as they offer pre-structured layouts that simplify the design process, making it faster to create visually cohesive websites.</p>
-                        <p class="card-text">Additionally, templates are often optimized for user experience, accessibility, and mobile compatibility, ensuring best practices and helping users create professional-quality sites efficiently.</p>
-                    </div>
+                <div class="about-content">
+                    <p>Welcome to Fuchsia Blog! Here, we aim to inspire creativity and share valuable insights on photography, design, lifestyle, and everything in between. Whether you're a beginner or a professional, we provide content to support your creative journey.</p>
+                    
+                    <p>Fuchsia Blog was created to showcase the intersection of creativity and practical tips. It’s a place where you can find engaging articles, tutorials, personal stories, and resources to help you grow as a creator. Our content is designed to be fun, approachable, and informative, whether you're here to learn a new skill or simply to find inspiration for your next project.</p>
+
+                    <p>We believe creativity is a journey that never ends, and we're here to share every step of the way. From photography tutorials to design tips and lifestyle hacks, Fuchsia Blog is your go-to resource for staying inspired and connected with the creative community.</p>
+
+                    <h2>Our Mission</h2>
+                    <p>Our mission is simple: to empower creatives by providing the tools, stories, and community they need to succeed. Whether you're an aspiring photographer or an experienced designer, we aim to provide you with the knowledge and inspiration to make your creative dreams a reality.</p>
+
+                    <h2>Join Us!</h2>
+                    <p>If you're passionate about creativity and design, we invite you to join the Fuchsia Blog community. Stay up-to-date with our latest posts by subscribing to our newsletter or following us on social media. We’re excited to have you along for the journey!</p>
                 </div>
-            </div>
+            </article>
         </div>
-    </main>
+    </section>
 
-    <footer class="bg-light text-center py-3">
-        <p>This is the footer information</p>
+    <!-- Footer Section -->
+    <footer class="site-footer">
+        <div class="container">
+            <ul class="footer-menu">
+                <li><a href="/about" class="active">About</a></li>
+                <li><a href="/privacy">Privacy Policy</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+            <p>&copy; 2025 Fuchsia Blog</p>
+        </div>
     </footer>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
